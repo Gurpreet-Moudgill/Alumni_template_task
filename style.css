@@ -1,0 +1,212 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: whitesmoke;
+
+}
+
+/* nav section */
+nav {
+    background: linear-gradient(-45deg,#57cfb0,#2ab5d3);
+    height: 5vh;
+    width: 100%;
+}
+
+img {
+    z-index: -1;
+    height: 11vh;
+    margin-top: 25px;
+    max-width: 100%;
+    /* font-size: 0.2rem; */
+}
+
+.navi {
+    margin-right: -15px;
+    position: absolute;
+    top: 50px;
+    right: 15px;
+}
+
+.navi li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.navi li a {
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+a.active,
+a:hover {
+    background: rgb(65, 242, 255);
+    transition: all 1s ease;
+    border-radius: 100px;
+}
+
+
+.moto {
+    width: 90%;
+    display: inline-block;
+    position: absolute;
+    z-index: -2;
+    /* margin: 150px 55px; */
+    top: 57%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.moto h1 {
+    font-size: 2.5rem;
+}
+
+/* Contact Section */
+.contact{
+    margin: auto;
+    text-decoration: none;
+    color: whitesmoke;  
+}
+
+.contact li {
+    display: inline-block;
+    line-height: 86px;
+    margin: -25px 1px;
+    
+}
+
+.contact li i {
+    color: black;
+    font-size: 12px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+
+ /* contact and moto mobile view */
+@media screen and (max-width: 700px) {
+
+    .moto h1 {
+        font-size: 1.6rem;
+    }
+
+    .btn{
+        position: relative;
+        padding: 30px 30px;
+        font-size: 0.5rem;
+    }
+
+    .contact{
+        display: flex;
+        color: black;
+        padding: 115px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact li i{
+        font-size: 1.1rem;
+    }
+
+    img{
+        position: absolute;
+        top: 50%;
+        height: 8vh;
+        width: 8vh;
+    }
+}
+ /* navbar for mobiles */
+@media screen and (max-width: 850px) {
+
+    .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        z-index: 1;
+        top: 50%;
+        transform: translate(-5%, -50%);
+    }
+
+    .navi {
+        position: absolute;
+        top: 29px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background: linear-gradient(-45deg,#57cfb0,#2ab5d3);
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(100px at 100% -20%);
+        -webkit-clip-path: circle(100px at 100% -20%);
+        transition: all 1s ease-out;
+    }
+
+    .navi.open {
+        clip-path: circle(1000px at 100% -10%);
+        -webkit-clip-path: circle(1000px at 100% -10%);
+    }
+
+}
+
+/* About Section */
+
+.img {
+    background: url(coding.jpg);
+    width: 100%;
+    padding-top: 40%;
+    border-radius: 100px;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    top: 70%;
+}
+
+@media screen and (max-width: 1360px) {
+    .img {
+        width: 100%;
+    }
+}
+
+.btn{
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid rgb(0, 255, 251);
+    padding: 5px 20px;
+    font-size: .8rem;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn:hover{
+    /* border: 1px solid red; */
+    background:#2ab5d3;
+    transition: 0.5s;
+}
